@@ -11,7 +11,9 @@ public:
 	window() :render() {};
 	virtual ~window();
 	bool init();
-	virtual void renderShape()=0;
+	void createRect();
+	void createSquare();
+	void renderShape(void);
 private:
 	SDL_Window *gWindow;
 };

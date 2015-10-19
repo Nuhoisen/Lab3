@@ -3,49 +3,49 @@
 #include <iostream>
 #include <string>
 #include <cmath>
-#include "rendRect.h"
+#include "window.h"
 
 using std::cout;
 using std::cin;
 
 int main(int argc, char * argv[])
 {
+	
 	shape * mainShape[2];
 	
 	window * mainWindow=nullptr;
 
-	render * mainRend = nullptr;
 
-	rendRect *mainRect = nullptr;
+	int check = 0;
 	int num = 0;
-	bool check = false;
+	
+
+	mainWindow = new window();
 	if (!mainWindow->init())
 	{
 		cout << "Failed to initialize!\n";
 	}
 	else
 	{
-		do {
-			cout << "would you like to render a rectangle(1.) or a square(2.)";
-			cin >> num;
-			if (num == 1)
-			{
-				check = true;
-				mainRect->renderRect();
-				
-			}
-			else if(num == 2)
-			{
-				check = true;
-				//otherfunction
-				
-			}
-
-		} while (check == false);
 		
+		cout << "Here is a rectangle";
+		mainWindow->createRect();
+		mainShape[0] = mainWindow;
+		
+		
+		cout << "\nHere is a square";
+		mainWindow->createSquare();
+		mainShape[1] = mainWindow;
+			
 
 		
-
+		
+		for (int i = 0; i < 1; i++)
+		{
+			delete mainShape[i];
+			mainShape[i] = NULL;
+		}
 	}
 	return 0;
+	
 }
