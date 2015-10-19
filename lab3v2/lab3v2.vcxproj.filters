@@ -15,30 +15,30 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="shape.h">
+    <ClInclude Include="cSquare.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="render.h">
+    <ClInclude Include="cRender.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="mRect.h">
+    <ClInclude Include="cRect.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="mSquare.h">
+    <ClInclude Include="cShape.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="render.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mSquare.cpp">
+    <ClCompile Include="cSquare.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mRect.cpp">
+    <ClCompile Include="cRect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cRender.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

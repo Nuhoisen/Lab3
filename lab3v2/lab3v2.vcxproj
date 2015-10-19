@@ -69,8 +69,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\Kelly Honsinger\Documents\Visual Studio 2015\SDL\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Kelly Honsinger\Documents\Visual Studio 2015\SDL\lib\win32;$(LibraryPath)</LibraryPath>
+    <IncludePath>z:\documents\Visual Studio 2015\Development Libraries\SDL\include;$(IncludePath)</IncludePath>
+    <LibraryPath>z:\documents\Visual Studio 2015\Development Libraries\SDL\lib\win32;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -124,16 +124,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="render.h" />
-    <ClInclude Include="shape.h" />
-    <ClInclude Include="mSquare.h" />
-    <ClInclude Include="mRect.h" />
+    <ClInclude Include="cRender.h" />
+    <ClInclude Include="cShape.h" />
+    <ClInclude Include="cSquare.h" />
+    <ClInclude Include="cRect.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="render.cpp" />
-    <ClCompile Include="mSquare.cpp" />
-    <ClCompile Include="mRect.cpp" />
+    <ClCompile Include="cRender.cpp" />
+    <ClCompile Include="cSquare.cpp" />
+    <ClCompile Include="cRect.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
